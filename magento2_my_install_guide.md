@@ -109,7 +109,7 @@
 3. **Two-factor authentication in admin panel**
    - Disable it with:
      ```bash
-     php bin/magento module:disable Magento_TwoFactorAuth
+     php bin/magento module:disable Magento_AdminAdobeImsTwoFactorAuth Magento_TwoFactorAuth
      ```
 
 ---
