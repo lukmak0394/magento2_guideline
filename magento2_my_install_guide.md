@@ -37,12 +37,14 @@
      ```
 3. **Download and install Composer**
 4. **Download and install Elasticsearch**
-5. **Create a database** in phpMyAdmin
-6. **Download Magento using Composer** into your project directory under `/htdocs/`:
+   - find `xpack.security.http.ssl` and set `enabled: false` in `elasticsearch/config/elasticsearch.yml`
+   - find `xpack.security.enabled` and set to `false` in `elasticsearch/config/elasticsearch.yml`
+6. **Create a database** in phpMyAdmin
+7. **Download Magento using Composer** into your project directory under `/htdocs/`:
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition .
    ```
-7. **Set up Virtual Hosts**
+8. **Set up Virtual Hosts**
    - Edit: `C:\Windows\System32\drivers\etc\hosts`
      ```
      127.0.0.1 magento.local
@@ -58,7 +60,7 @@
      </VirtualHost>
      ```
    - Restart Apache
-8. **Install Magento** using Command Prompt:
+9. **Install Magento** using Command Prompt:
    ```bash
    php bin/magento setup:install \
      --base-url="http://magento.local/" \
