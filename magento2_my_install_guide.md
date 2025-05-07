@@ -44,6 +44,8 @@
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition .
    ```
+   ```bash composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.7 devmagento
+   ```
 8. **Set up Virtual Hosts**
    - Edit: `C:\Windows\System32\drivers\etc\hosts`
      ```
